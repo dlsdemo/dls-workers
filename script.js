@@ -3,6 +3,7 @@ fetch('https://headers.dlsdemo.com/')
   .then(response => {
     // Retrieve the CF-Cache-Status header from the response
     const cfCacheStatus = response.headers.get('CF-Cache-Status');
+    console.log(cfCacheStatus)
     return { response, cfCacheStatus };
   })
   .then(({ response, cfCacheStatus }) => {
