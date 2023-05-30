@@ -1,5 +1,5 @@
 // Retrieve the Cloudflare Workers and HTTP headers
-fetch('https://headers.dls-demo.workers.dev/')
+fetch('https://headers.dlsdemo.com/')
   .then(response => {
     // Retrieve the CF-Cache-Status header from the response
     const cfCacheStatus = response.headers.get('CF-Cache-Status');
